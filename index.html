@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лучший покер в Кыргызстане</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1596345781609399');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1596345781609399&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #050505;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      position: relative;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(244, 199, 107, 0.2), transparent 32%),
+        radial-gradient(circle at 82% 18%, rgba(160, 20, 20, 0.25), transparent 35%),
+        linear-gradient(135deg, #050505 0%, #101010 55%, #020202 100%);
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 44px 44px;
+      pointer-events: none;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    header {
+      padding: 28px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 900;
+      letter-spacing: 1px;
+      font-size: 22px;
+      color: #f4c76b;
+    }
+
+    .badge {
+      border: 1px solid rgba(244, 199, 107, 0.35);
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: #f4c76b;
+      background: rgba(244, 199, 107, 0.08);
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: calc(100vh - 86px);
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 50px;
+      padding: 50px 0 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      color: #f4c76b;
+      background: rgba(244, 199, 107, 0.1);
+      border: 1px solid rgba(244, 199, 107, 0.3);
+      padding: 10px 16px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, #fff, #f4c76b, #b8872c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: clamp(18px, 2vw, 24px);
+      line-height: 1.5;
+      color: #d6d6d6;
+      max-width: 650px;
+      margin-bottom: 18px;
+    }
+
+    .description {
+      color: #a9a9a9;
+      font-size: 17px;
+      line-height: 1.7;
+      max-width: 620px;
+      margin-bottom: 36px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #111;
+      font-weight: 900;
+      font-size: 18px;
+      padding: 18px 32px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffe08a, #d69b2d);
+      box-shadow:
+        0 20px 60px rgba(214, 155, 45, 0.35),
+        inset 0 1px 0 rgba(255,255,255,0.7);
+      transition: 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 28px 80px rgba(214, 155, 45, 0.5);
+    }
+
+    .trust {
+      color: #bfbfbf;
+      font-size: 14px;
+    }
+
+    .visual {
+      position: relative;
+      height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .glow {
+      position: absolute;
+      width: 430px;
+      height: 430px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,199,107,0.35), transparent 68%);
+      filter: blur(10px);
+    }
+
+    .card {
+      width: 210px;
+      height: 300px;
+      background: linear-gradient(145deg, #fff, #d7d7d7);
+      border-radius: 22px;
+      position: absolute;
+      box-shadow: 0 40px 120px rgba(0,0,0,0.6);
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .card::before,
+    .card::after {
+      position: absolute;
+      font-weight: 900;
+      font-size: 42px;
+    }
+
+    .card::before {
+      top: 20px;
+      left: 22px;
+    }
+
+    .card::after {
+      bottom: 20px;
+      right: 22px;
+      transform: rotate(180deg);
+    }
+
+    .card.a {
+      transform: rotate(-16deg) translateX(-90px);
+      z-index: 3;
+    }
+
+    .card.a::before,
+    .card.a::after {
+      content: "A♠";
+      color: #111;
+    }
+
+    .card.k {
+      transform: rotate(13deg) translateX(90px) translateY(18px);
+      z-index: 2;
+    }
+
+    .card.k::before,
+    .card.k::after {
+      content: "K♥";
+      color: #b80f1d;
+    }
+
+    .chip {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, #111 0 28%, transparent 29%),
+        repeating-conic-gradient(#b80f1d 0 15deg, #fff 15deg 28deg);
+      border: 12px solid #d69b2d;
+      bottom: 72px;
+      left: 55px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      z-index: 5;
+    }
+
+    .advantages {
+      padding: 0 0 80px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .advantages-title {
+      font-size: clamp(30px, 4vw, 52px);
+      margin-bottom: 28px;
+      letter-spacing: -2px;
+    }
+
+    .advantages-title span {
+      color: #f4c76b;
+    }
+
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+    }
+
+    .advantage {
+      padding: 26px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.025));
+      border: 1px solid rgba(244,199,107,0.16);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.25);
+    }
+
+    .advantage-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+
+    .advantage h3 {
+      color: #f4c76b;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .advantage p {
+      color: #c7c7c7;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .bottom-cta {
+      margin-top: 34px;
+      padding: 36px;
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, rgba(184,15,29,0.28), rgba(244,199,107,0.14)),
+        rgba(255,255,255,0.04);
+      border: 1px solid rgba(244,199,107,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .bottom-cta h2 {
+      font-size: clamp(26px, 3vw, 40px);
+      margin-bottom: 8px;
+    }
+
+    .bottom-cta p {
+      color: #d0d0d0;
+      font-size: 17px;
+    }
+
+    @media (max-width: 1000px) {
+      .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 35px;
+      }
+
+      .visual {
+        height: 430px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      header {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      .card {
+        width: 160px;
+        height: 230px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .advantages-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bottom-cta {
+        padding: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="container">
+      <header>
+        <div class="logo">POKER CLUB</div>
+        <div class="badge">Кыргызстан</div>
+      </header>
+
+      <section class="hero">
+        <div>
+          <div class="eyebrow">♠ Премиальный покер-рум</div>
+
+          <h1>
+            Играй в <span>лучший покер</span> в Кыргызстане
+          </h1>
+
+          <p class="subtitle">
+            Надежный покер-рум с топовыми бонусами, активными игроками и быстрым доступом
+          </p>
+
+          <p class="description">
+            Играй в честный покер с мгновенным доступом и полной поддержкой для игроков в Кыргызстане.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="https://t.me/+dm8CamG_BfljODEy" target="_blank" onclick="fbq('track', 'Lead');">
+              Присоединиться в Telegram
+            </a>
+            <div class="trust">Старт через Telegram за 1 минуту</div>
+          </div>
+        </div>
+
+        <div class="visual">
+          <div class="glow"></div>
+          <div class="card a"></div>
+          <div class="card k"></div>
+          <div class="chip"></div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <h2 class="advantages-title">
+          Почему выбирают <span>нас?</span>
+        </h2>
+
+        <div class="advantages-grid">
+          <div class="advantage">
+            <div class="advantage-icon">⚡</div>
+            <h3>Мгновенный доступ</h3>
+            <p>Присоединяйся через Telegram менее чем за 1 минуту и начинай играть.</p>
+          </div>
+
+          <div class="advantage">
+            <div class="advantage-icon">🎁</div>
+            <h3>Эксклюзивные бонусы</h3>
+            <p>Бонусы на депозит и специальные предложения для новых игроков.</p>
+          </div>
+
+          <div class="advantage">
+            <div class="advantage-icon">♣</div>
+            <h3>Активные игроки</h3>
+            <p>Кэш-столы и турниры доступны в любое время.</p>
+          </div>
+
+          <div class="advantage">
+            <div class="advantage-icon">🛡</div>
+            <h3>Надежная система</h3>
+            <p>Стабильная платформа и безопасная игровая среда.</p>
+          </div>
+
+          <div class="advantage">
+            <div class="advantage-icon">📞</div>
+            <h3>Поддержка 24/7</h3>
+            <p>Быстрая помощь и сопровождение игроков в любое время.</p>
+          </div>
+        </div>
+
+        <div class="bottom-cta">
+          <div>
+            <h2>Готов начать игру?</h2>
+            <p>Присоединяйся через Telegram и получи доступ мгновенно.</p>
+          </div>
+
+          <a class="btn" href="https://t.me/+dm8CamG_BfljODEy" target="_blank" onclick="fbq('track', 'Lead');">
+            Начать сейчас
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
